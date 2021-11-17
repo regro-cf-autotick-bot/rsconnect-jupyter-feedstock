@@ -1,13 +1,13 @@
 {% set name = "rsconnect-jupyter" %}
-{% set version = "1.4.2" %}
+{% set version = "1.4.4" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
-source: 
+source:
   url: https://github.com/rstudio/{{ name }}/archive/refs/tags/{{ version }}.tar.gz
-  sha256: 74c7bf1c7dde94688ab633c711207a6ac7fad5616a1f26edcdb16351be67f38d
+  sha256: a8801adf439f4e0038c33784d52e32a4d35a322c53a26f90bc620493b902c72d
 
 build:
   noarch: python
@@ -37,7 +37,7 @@ about:
   license: GPL-2.0-only
   license_family: GPL
   license_file: LICENSE.md
-  summary: 'Jupyter Notebook integration with RStudio Connect'
+  summary: Jupyter Notebook integration with RStudio Connect
 
 extra:
   recipe-maintainers:
